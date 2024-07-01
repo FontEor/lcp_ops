@@ -1,0 +1,24 @@
+// el-row分五份
+// .el-col-5{
+//   width:20%;
+// }
+// table里只能用mini按钮，否则会撑大table-cell的高度
+.jdwl-body{
+  .el-table{
+    .el-button--mini{
+      font-size:14px;
+    }
+  }
+  // 日历范围长度撑开
+  .el-range-editor.el-input__inner{
+    width:100%;
+  }
+  // 大按钮与大按钮之间间距保持20
+  .el-button--big+.el-button {
+      margin-left: 20px;
+  }
+  
+  .el-table .el-loading-mask{
+    z-index:50
+  }
+}

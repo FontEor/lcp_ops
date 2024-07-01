@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"
+    />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="//storage.360buyimg.com/quark-icon/icons/font_529520Tqny7juOHvgu.css"
+    />
+    <link rel="stylesheet" href="<%= BASE_URL %>vditor/dist/index.css"/>
+    <title>京东物流开放平台国际站运维端</title>
+  </head>
+  <!--jdwl-body 这个class必须有，用于修复切换主题带来的样式优先级问题 -->
+  <body class="jdwl-body">
+    <noscript>
+      <strong
+        >We're sorry but 京东物流开放平台国际站运维端 doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script type="text/javascript">
+      var jaq = jaq || [];
+      // 需要申请account 替换 ‘xxx’ 申请地址 http://stream.jd.com/#/dashboard/joinup/site-apply
+      // 根据不同域名修改 domain
+      jaq.push(["account", "xxx"]);
+      // jaq.push(["domain", "jdl.cn"]);
+      jaq.push(["domain", "jdl.com"]);
+      jaq.push(["anchorpvflag", "true"]);
+      // 非ERP登录可以注释 erp_account
+      jaq.push(["erp_account", "test"]);
+      (function() {
+        var ja = document.createElement("script");
+        ja.type = "text/javascript";
+        ja.async = true;
+        ja.src = "//wl.jd.com/joya.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ja, s);
+      })();
+    </script>
+    <script src="<%= BASE_URL %>vditor/dist/index.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+//客群创建：标签筛选、文件导入、系统对接、智能筛选，中的标签组
+.config-form-vertical{
+  width:465px;
+  margin-top:20px;
+}
+.tag-group{
+  .tag-group-title{
+    font-size:13px;
+    color: #666;
+    margin-bottom:5px;
+  }
+  .el-tag {
+    margin: 0 10px 10px 0;
+  }
+  &.tag-info-group{
+    margin:16px 0 0;
+    .el-tag{
+      margin:0 5px;
+    }
+  }
+}
+.config-group{
+  margin:10px 0 20px;
+  border: 1px solid #EFF3FA;
+  border-radius: 4px;
+  .config-group-tit{
+    font-size: 14px;
+    color: #2B2B2B;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  .config-thead{
+    height:36px;
+    line-height:36px;
+    background:#EFF3FA;
+    padding:0 16px;
+    .config-edit-tit-inp{
+      width:82px;
+    }
+  }
+  .config-tbody{
+    padding:16px;
+    color:#333;
+    font-size:14px;
+    .config-item{
+      padding-top:6px;
+    }
+    .config-label-title{
+      margin-bottom:10px;
+      font-weight: 600;
+    }
+    .config-label-tip{
+      font-size:13px;
+      margin-bottom:10px;
+    }
+  }
+  &.config-file-group{
+    .config-tbody{
+      padding-top:16px;
+      padding-bottom:20px;
+    }
+  }
+}
+.config-group-add-btn{
+  margin:20px 0;
+}
+.upload{
+  position:relative;
+  padding-bottom:10px;
+  .txt-btn{
+    position: absolute;
+    top:32px;
+    left:100px;
+  }
+}
+.customers-list{
+  padding: 0 10px;
+  span,.el-button--text{
+    font-size: 14px;
+    padding:0;
+    display: inline-block;
+  }
+  .el-button--text{
+    margin-left:10px;
+  }
+  > div{
+    &:nth-child(n+4){
+      padding-top: 16px;
+    }
+  }
+}

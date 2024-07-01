@@ -1,0 +1,19 @@
+@import './variables.scss';
+$themes: (
+  red: (
+    main-color: $mainColorRed,
+    menu-color: $mainColorRed,
+    menu-dark-color: mix(#000, $menuColorRed, 85%),
+    menu-hover-color: mix(#c8d8ff, $menuColorRed, 90%),
+    menu-active-color: $menuColorRed,
+    nav-menu-hover: mix(#000, $menuColorRed, 15%)
+  ),
+  blue: (
+    main-color: $mainColor,
+    menu-color: $mainColor,
+    menu-dark-color: mix(#000, $menuColor, 85%),
+    menu-hover-color: mix(#c8d8ff, $menuColor, 90%),
+    menu-active-color: $menuColor,
+    navMenuHover: mix(#000, $menuColor, 15%)
+  )
+);

@@ -1,0 +1,49 @@
+@import './themes.scss';
+// @include themify() {
+//   border: 1px solid themed('main-color');
+// }
+@mixin themify($themes: $themes) {
+  @each $theme-name, $map in $themes {
+    .theme-#{$theme-name} & {
+
+      $theme-map:() !global;
+
+      @each $key, $value in $map {
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+
+      @content;
+
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
+
+//获取背景颜色
+// @include background_color("main-color");
+@mixin background_color($color) {
+  @include themify {
+      background-color: themed($color)!important;
+  }
+}
+
+//获取字体颜色
+// @include font_color("main-color");
+@mixin font_color($color) {
+  @include themify {
+    color: themed($color)!important;
+  }
+}
+
+//获取边框颜色
+// @include border_color("main-color");
+@mixin border_color($color) {
+  @include themify {
+      border-color: themed($color)!important;
+  }
+}
+

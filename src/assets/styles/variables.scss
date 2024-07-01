@@ -1,0 +1,26 @@
+// 主色、导航和侧边栏颜色
+$mainColorRed: #E1251B;
+$mainColor: #3c6ef0;
+$menuColorRed: $mainColorRed;
+$menuColor: $mainColor;
+$menuTitle: #ffffff;
+$menuText: #ffffff;
+$subMenuBg: #ffffff;
+$sideBarWidth: 200px;
+$sideBarMiniWidth: 54px;
+$logoHeight: 30px;
+$navHeight: 60px;
+
+:export {
+  mainColorRed: $mainColorRed;
+  mainColor: $mainColor;
+  menuColorRed: $menuColorRed;
+  menuColor: $menuColor;
+  menuTitle: $menuTitle;
+  menuText: $menuText;
+  subMenuBg: $subMenuBg;
+  sideBarWidth: $sideBarWidth;
+  sideBarMiniWidth: $sideBarMiniWidth;
+  logoHeight: $logoHeight;
+  navHeight: $navHeight
+}

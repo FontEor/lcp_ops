@@ -1,0 +1,196 @@
+@import './mixins.scss';
+ //放在里面，颜色不生效
+ // 公用问号help
+ .lui-help .el-icon-help{
+  &:hover{
+    @include font_color("main-color");
+  }
+}
+// 公用按钮
+.lui-btn{
+  @include font_color("main-color");
+  @include border_color("main-color");
+}
+.lui-tit{
+  &:before{
+    @include background_color("main-color");
+  }
+}
+.jdwl-body {
+  .pt10{
+    padding-top:10px;
+  }
+  .pt20{
+    padding-top:20px;
+  }
+  .pl10{
+    padding-left:10px;
+  }
+  .pl20{
+    padding-left:20px;
+  }
+  .mt5{
+    margin-top:5px;
+  }
+  .mt10{
+    margin-top:10px;
+  }
+  .mt20{
+    margin-top:20px;
+  }
+  .mb0{
+    margin-bottom:0!important;
+  }
+  .mb5{
+    margin-bottom:5px;
+  }
+  .mb10{
+    margin-bottom:10px;
+  }
+  .mb15{
+    margin-bottom:15px;
+  }
+  .mb20{
+    margin-bottom:20px;
+  }
+  .mr4 {
+    margin-right: 4px;
+  }
+  .mr10{
+    margin-right:10px;
+  }
+  .mr20{
+    margin-right:20px;
+  }
+  .mlr10{
+    margin:0 10px;
+  }
+  .lh32{
+    line-height:32px;
+  }
+  /* -----lui- 公用类名前缀 -----*/
+  // 页面底部有button时
+  .mod-tpl{
+    margin-bottom:60px;
+  }
+  .lui-mod,
+  .lui-view,
+  .lui-container{
+    background:#fff;
+    padding:20px;
+    &.pb0{
+      padding-bottom:0!important;
+    }
+  }
+  // 公用title
+  .lui-tit{
+    font-size:14px;
+    color:#333;
+    font-weight:600;
+    line-height:20px;
+    padding-left:10px;
+    margin-bottom:20px;
+    position: relative;
+    &:before{
+      content:"";
+      position: absolute;
+      top:50%;
+      left:0;
+      margin-top:-6px;
+      width:3px;
+      height:12px;
+    }
+  }
+  // 公用help
+  .lui-help{
+    .el-icon-help{
+      color:#666;
+      margin-left: 3px;
+      vertical-align: middle;
+    }
+  }
+  // 公用表单
+  .lui-form{
+    .lui-form-btn-wrap{
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      text-align: right;
+      .el-form-item__content{
+        margin-left: 10px !important;
+        min-width:150px;
+        display: inline-block;
+      }
+      .el-button{
+        letter-spacing: 2px;
+      }
+    }
+    .el-input,
+    .el-select{
+      width:100%;
+      display:block;
+    }
+    .el-date-editor.el-input,
+    .el-date-editor.el-input__inner {
+      width:100%;
+    }
+  }
+  // 公用*号
+  .lui-label{
+    &:before {
+      content: "*";
+      display: inline-block;
+      color: #e1251b;
+      margin-right: 4px;
+    }
+  }
+  /* ----- 公用table上面的按钮及说明 -----*/
+  .lui-table-top{
+    line-height:32px;
+    margin-bottom:15px;
+  }
+  // 公用分页
+  .lui-pagination-wrap{
+    padding-top:10px;
+    text-align: right;
+    .lui-pagination{
+      display: inline-block;
+    }
+  }
+  // 公用底部
+  .ft{
+    position:fixed;
+    bottom:0;
+    height:80px;
+    right:0;
+    left:0;
+    padding:14px 20px 0 200px;
+    background: #FFFFFF;
+    border-radius: 0 0 2px 2px;
+    z-index:9;
+    overflow: hidden;
+    color:#666;
+    font-size:14px;
+    border-top:20px solid #f5f5f5; //页面要求全局白色背景，所以底部按钮这样做了
+    // box-shadow: 2px 0 8px 0 rgba(0,0,0,0.08);
+    .el-button{
+      padding-left:20px;
+      padding-right:20px;
+    }
+  }
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.font-bolder {
+  font-weight: bolder;
+}
+.flex {
+  display: flex;
+}
+.flex-1 {
+  flex: 1
+}
+
+
